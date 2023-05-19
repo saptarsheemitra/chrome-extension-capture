@@ -90,7 +90,7 @@ function generateText(content) {
   if (selectedCapture) {
     // alert(selectedCapture);
     const prompt = selectedCapture;
-    const apiKey = "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";
+    const apiKey = "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";
     const apiUrl = "https://api.openai.com/v1/completions";
     console.log("Sending request to OpenAI...");
     fetch(apiUrl, {
