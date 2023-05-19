@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Extension</title>
+    <script src="popup.js"></script>
+    <style>
+        body {
+          width: 300px;
+          height: 400px;
+          padding: 10px;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+        }
+  
+        h1 {
+          margin-top: 0;
+          margin-bottom: 10px;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+        }
+  
+        .capture {
+          margin-bottom: 10px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          background-color: #f9f9f9;
+        }
+  
+        .metadata {
+          margin-top: 5px;
+          font-size: 12px;
+          color: #666;
+        }
+  
+        .metadata {
+          margin-right: 10px;
+        }
+  
+        #captures-container {
+          max-height: 300px;
+          overflow-y: auto;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Captures</h1>
+    <button id="toggle-button" data-current-url="">Show Captures for Current Site</button>
+    <div id="output"></div>
+    <div id="captures-container"></div>
+  </body>
+</html>
+

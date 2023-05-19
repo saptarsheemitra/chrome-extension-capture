@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "Workduck Extension",
+    "version": "1.0",
+    "description": "Capture content from web pages",
+    "icons": {
+
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+      ],   
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+
+    "commands": {
+      "capture_element": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+Z",
+          "mac": "MacCtrl+Shift+Z"
+        },
+        "description": "Capture element content"
+      }
+    },
+    "browser_action": {
+      "default_icon": {
+
+      },
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs",
+        "debugger"
+      ]
+   
+  }
+  
