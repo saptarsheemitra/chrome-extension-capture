@@ -126,7 +126,6 @@ h1 {
     transition: all 200ms;
     vertical-align: baseline;
     white-space: nowrap;
-    -webkit-user-select: none;
     touch-action: manipulation;
     width: 100%;
 }

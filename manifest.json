@@ -4,7 +4,9 @@
     "version": "1.0",
     "description": "Capture content from web pages",
     "icons": {
-
+      "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
     },
     "content_scripts": [
         {
@@ -28,7 +30,9 @@
     },
     "browser_action": {
       "default_icon": {
-
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
       },
       "default_popup": "popup.html"
     },
