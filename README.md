@@ -30,7 +30,8 @@ To use the Element Capture Extension, follow these steps:
 8. Enter your desired text length in the input field and click "Generate".
 9. The generated text will appear in an alert box.
 
-##Screenshots
+## Screenshots
+
 ![Element Capture Extension](https://github.com/saptarsheemitra/chrome-extension-capture/blob/main/screenshots/Screenshot1.png)
 ![Element Capture Extension](https://github.com/saptarsheemitra/chrome-extension-capture/blob/main/screenshots/Screenshot0.png)
 ![Element Capture Extension](https://github.com/saptarsheemitra/chrome-extension-capture/blob/main/screenshots/Screenshot2.png)
