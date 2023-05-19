@@ -90,7 +90,7 @@ function generateText(content) {
   if (selectedCapture) {
     // alert(selectedCapture);
     const prompt = selectedCapture;
-    const apiKey = "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";
+    const apiKey = ""; //OpenAI api key
     const apiUrl = "https://api.openai.com/v1/completions";
     console.log("Sending request to OpenAI...");
     fetch(apiUrl, {
@@ -121,12 +121,12 @@ function generateText(content) {
         // console.log("Data:", data.choices[0].text);
         const result = data.choices[0].text.trim();
         console.log(result);
-        if (!result == "") {
+        if (result == "") {
           alert(
-            "OOPs no response recieved from OpenAI..\n Please check after sometime!"
+            "Seems like OpenAI is not responding..\nPlease try again after sometime!"
           );
         } else {
-          alert(`ChatGPT result: \n${result} \n \n Result has been saved`);
+          alert(`ChatGPT result: \n${result} \n \nResult has been saved`);
 
           chrome.storage.local.set({ result }, () => {
             console.log("Result has been saved:", result);
